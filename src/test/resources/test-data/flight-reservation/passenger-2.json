@@ -1,0 +1,11 @@
+{
+  "firstName": "Amit",
+  "lastName": "Paul",
+  "email": "aj@aj.com",
+  "password": "docker",
+  "street": "123 test street",
+  "city": "atlanta",
+  "zip": "821115",
+  "passengerCount": "2",
+  "expectedPrice": "$1169 USD"
+}
