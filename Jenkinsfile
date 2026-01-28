@@ -25,8 +25,15 @@ sh "docker build -t keshrsa/selenium-docker-via-git ."
 
 stage('Push Image'){
 
+environment{
+
+DOCKER_HUB=credentials('dockerhub-creds')
+
+}
+
 steps{
 
+sh 'docker login -u ${DOCKER_HUB_USR} -p ${DOCKER_HUB_PSW}'
 sh "docker push  keshrsa/selenium-docker-via-git"
 
 }
@@ -34,6 +41,17 @@ sh "docker push  keshrsa/selenium-docker-via-git"
 
 }
 
+
+
+}
+
+post{
+
+always{
+
+sh "docker logout"
+
+}
 
 
 }
