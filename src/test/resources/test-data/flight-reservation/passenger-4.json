@@ -7,5 +7,6 @@
   "city": "atlanta",
   "zip": "821115",
   "passengerCount": "4",
-  "expectedPrice": "$2338 USD"
+  "expectedPrice": "$2337 USD"
+
 }
